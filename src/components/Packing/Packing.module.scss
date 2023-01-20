@@ -1,0 +1,160 @@
+.packing_wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+.packing {
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: 768px){
+
+  }
+
+  &_container {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 509px;
+    margin-top: 24px;
+    background-color: #FFFFFF;
+    margin-left: 40px;
+    border-radius: 10px;
+    border: 5px solid #1698D9;
+    clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+    overflow: hidden;
+
+  }
+
+  &_info__block{
+//z-index: 3;
+
+   min-height:33%;
+  }
+
+
+  &_tagline {
+    color: #666666;
+    padding-left: 51px;
+    margin-top: 21px;
+  }
+
+  &_title {
+    margin-top: 5px;
+    padding-left: 48px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  &_topping {
+    padding-left: 48px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 3px;
+  }
+
+  &_portion {
+    padding-left: 48px;
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666;
+  }
+
+  &_bonus__container {
+    display: flex;
+    flex-direction:row;
+    color: #666666;
+    z-index: 2;
+  }
+
+  &_bonus__quantity {
+    padding-left: 48px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+
+  }
+
+  &_bonus {
+    flex-direction: row;
+    padding-left: 3px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+
+  }
+
+  &_comment {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666;
+    padding-left: 48px;
+    margin-bottom: -10px;
+  }
+
+  &_cat {
+    width: 130%;
+    padding-top: 35px;
+    margin-left: -40px;
+
+  }
+  &_visualBlock{
+    display: flex;
+    flex-direction: row;
+    //border: 1px solid red;
+    position: relative;
+  }
+  &_volume__box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    bottom: 115px;
+    margin-left: 230px;
+    position: absolute;
+    width:80px ;
+    height: 80px;
+    background: #1698D9;
+    color: #FFFFFF;
+
+  }
+  &_volume{
+    padding-top:10px ;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+
+  }
+  &_volume__box span{
+    font-size: 24px;
+    margin-top: 7px;
+  }
+}
+.packing_description{
+
+  margin-top:14px ;
+  margin-left: 80px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #FFFFFF;
+
+  & a{
+
+    color: #1698D9;
+     cursor: pointer;
+   }
+}
