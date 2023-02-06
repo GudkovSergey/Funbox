@@ -4,8 +4,8 @@ import cat from "../../Assets/cat.png"
 import cn from "classnames"
 
 const Packing = (props) => {
-    const [selected, setSelected] = React.useState(false)
-    const [selectedHover,setSelectedHover] =React.useState('')
+    const [selected, setSelected] = React.useState(false);
+    const [selectedHover,setSelectedHover] =React.useState();
 
     const selectPacking = ()=> {
         setSelected(selected === false ? true : false);
@@ -35,10 +35,9 @@ const Packing = (props) => {
 
                 <div className={style.packing_info__block}>
 
-                    {!selectedHover  ?
+                    {(!selectedHover ||selected===false) ?
                         <div className={style.packing_tagline}>{props.tagline}</div>:
                         <div className={cn(style.packing_tagline,style.packing_tagline__hover)}>{props.taglineHover}</div>
-
 
 
                     }
