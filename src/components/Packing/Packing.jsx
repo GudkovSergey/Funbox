@@ -5,30 +5,45 @@ import cn from "classnames"
 
 const Packing = (props) => {
     const [selected, setSelected] = React.useState(false)
-    const [selectedHover,setSelectedHover] =React.useState(false)
+    const [selectedHover,setSelectedHover] =React.useState('')
 
     const selectPacking = ()=> {
         setSelected(selected === false ? true : false);
 
     }
-    const selectPackingHover = ()=>{
-        if(selected===true){
+    const onMouseLeave = ()=>{
 
-        }
+        setSelectedHover(selectedHover === false)
+    }
+
+    const onMouseEnter = ()=>{
+
+        setSelectedHover(selectedHover === false)
     }
 
     return (
         <div className={style.packing_wrap}>
 
-            <div onMouseLeave={selectPackingHover}
+            <div onMouseLeave={onMouseLeave}
+                 onMouseEnter={onMouseEnter}
 
                  onClick={selectPacking}
 
-                 className={selected === false ? cn(style.packing_container, style.defaultHover) : cn(style.packing_container, style.activeSelected)}>
+                 className={selected === false ? cn(style.packing_container, style.defaultHover) :
+                     selectedHover===false? cn(style.packing_container, style.activeSelected):
+                         cn(style.packing_container, style.selectedHover)}>
 
                 <div className={style.packing_info__block}>
 
-                    <div className={style.packing_tagline}>{props.tagline}</div>
+                    {!selectedHover  ?
+                        <div className={style.packing_tagline}>{props.tagline}</div>:
+                        <div className={cn(style.packing_tagline,style.packing_tagline__hover)}>{props.taglineHover}</div>
+
+
+
+                    }
+
+
                     <div className={style.packing_title}>{props.title}</div>
                     <div className={style.packing_topping}>{props.topping} </div>
                     <div className={style.packing_portion}>{props.portion} порций</div>
@@ -47,7 +62,9 @@ const Packing = (props) => {
                     <img className={style.packing_cat} src={cat} alt="cat"/>
 
                     <div
-                        className={selected === false ? style.packing_volume__box : cn(style.packing_volume__box, style.volume_box__active)}>
+                        className={selected === false ? style.packing_volume__box :
+                            selectedHover===false? cn(style.packing_volume__box, style.volume_box__active):
+                            cn(style.packing_volume__box, style.volume_boxHover__active) }>
 
                         <div className={style.packing_volume}>{props.volume} </div>
 
