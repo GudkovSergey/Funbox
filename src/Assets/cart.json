@@ -9,9 +9,10 @@
     "bonus_quantity" :null,
     "volume":"0,5",
     "comment": null,
-    "descriotion_default": "Чего сидишь? Порадуй котэ,",
-    "descriotion_selected": "Печень утки разварная с артишоками",
-    "descriotion_disabled": "Печалька, с фуа-гра закончился"
+    "description_default": "Чего сидишь? Порадуй котэ,",
+    "description_selected": "Печень утки разварная с артишоками",
+    "description_disabled": "Печалька, с фуа-гра закончился",
+    "quantity": 3
   },
   {
     "id": 2,
@@ -23,9 +24,10 @@
     "bonus_quantity" :2 ,
     "volume":"2",
     "comment": null,
-    "descriotion_default": "Чего сидишь? Порадуй котэ,",
-    "descriotion_selected":  "Головы щучьи с чесноком да свежайшая сёьгушка",
-    "descriotion_disabled": "Печалька, с рыбой закончился"
+    "description_default": "Чего сидишь? Порадуй котэ,",
+    "description_selected":  "Головы щучьи с чесноком да свежайшая сёьгушка",
+    "description_disabled": "Печалька, с рыбой закончился",
+    "quantity": 3
   },
   {
     "id": 3,
@@ -37,9 +39,10 @@
     "bonus_quantity" :5,
     "volume":"5",
     "comment": "заказчик доволен",
-    "descriotion_default": "Чего сидишь? Порадуй котэ,",
-    "descriotion_selected": "Филе из цыплят с трюфелями в бульоне",
-    "descriotion_disabled": "Печалька, с курой закончился"
+    "description_default": "Чего сидишь? Порадуй котэ,",
+    "description_selected": "Филе из цыплят с трюфелями в бульоне",
+    "description_disabled": "Печалька, с курой закончился",
+    "quantity": 3
   }
 
 ]
