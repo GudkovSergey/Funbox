@@ -8,7 +8,7 @@
     "portion": 10,
     "bonus":"мышь в подарок",
     "bonus_quantity" :null,
-    "volume":"0,5",
+    "volume":"0.5",
     "comment": null,
     "description_default": "Чего сидишь? Порадуй котэ,",
     "description_selected": "Печень утки разварная с артишоками",
@@ -45,7 +45,7 @@
     "description_default": "Чего сидишь? Порадуй котэ,",
     "description_selected": "Филе из цыплят с трюфелями в бульоне",
     "description_disabled": "Печалька, с курой закончился",
-    "quantity": 3
+    "quantity": 0
   }
 
 ]

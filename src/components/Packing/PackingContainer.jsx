@@ -11,16 +11,7 @@ const PackingContainer = ()=>{
             {
                 cart.map((obj) =>(
                     <Packing {...obj}
-                         // key={obj.id}
-                         // tagline={obj.tagline}
-                         // title={obj.title}
-                         // topping ={obj.topping}
-                         // portion={obj.portion}
-                         // bonus={obj.bonus}
-                         // bonus_quantity={obj.bonus_quantity}
-                         // comment={obj.comment}
-                         // volume={obj.volume}
-                         // description_default={obj.description_default}
+
 
 
                 />))
