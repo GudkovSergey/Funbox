@@ -18,6 +18,7 @@ const Packing = (props) => {
     const disabled = (selected === true && props.quantity <= 0);
 
     return (
+
         <div className={style.packing_wrap}>
 
             <div onMouseLeave={onMouseToggle}
@@ -28,6 +29,7 @@ const Packing = (props) => {
                      cn(style.packing_container, style.disabled_border__color) :
                      selectedHover === false ? cn(style.packing_container, style.activeSelected) :
                          cn(style.packing_container, style.selectedHover)}>
+
 
                 <div className={style.packing_info__block}>
 

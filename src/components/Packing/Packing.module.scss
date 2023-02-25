@@ -22,6 +22,7 @@
   }
 
   &_container {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 320px;
@@ -35,7 +36,9 @@
     overflow: hidden;
     cursor: pointer;
 
+
   }
+
 
 
 
@@ -218,3 +221,4 @@ background: #B3B3B3;
 .disabled_text__color{
   color:#B3B3B3;
 }
+
