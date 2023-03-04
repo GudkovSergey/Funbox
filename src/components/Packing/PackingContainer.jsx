@@ -3,21 +3,17 @@ import style from "./Packing.module.scss"
 import Packing from "./Packing";
 import cart from "../../Assets/cart.json";
 
-const PackingContainer = ()=>{
+const PackingContainer = () => {
 
-    return(
+    return (
         <div className={style.packing}>
 
             {
-                cart.map((obj) =>(
+                cart.map((obj) => (
                     <Packing {...obj}
 
-
-
-                />))
+                    />))
             }
-
-
 
 
         </div>

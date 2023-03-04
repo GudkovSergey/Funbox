@@ -1,20 +1,31 @@
-.packing_wrap{
+// Variable color
+$color_default: #1698D9;
+$color_default__hover: #2EA8E6;
+$color_selected: #D91667;
+$color_selected__hover: #E52E7A;
+$color_disabled: #B3B3B3;
+$color_grey: #666666;
+$color_white: #FFFFFF;
+
+
+.packing_wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
 
 }
+
 .packing {
   display: flex;
   flex-direction: row;
 
-  @media  (max-width: 1024px){
+  @media (max-width: 1024px) {
     justify-content: center;
     flex-wrap: wrap;
 
 
   }
-  @media  (max-width: 720px){
+  @media (max-width: 720px) {
     justify-content: center;
     flex-direction: column;
 
@@ -28,10 +39,10 @@
     width: 320px;
     height: 509px;
     margin-top: 24px;
-    background-color: #FFFFFF;
+    background-color: $color_white;
     margin-left: 40px;
     border-radius: 10px;
-    border: 5px solid #1698D9;
+    border: 5px solid $color_default;
     clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
     overflow: hidden;
     cursor: pointer;
@@ -40,23 +51,18 @@
   }
 
 
-
-
-  &_info__block{
-
-
-   min-height:33%;
+  &_info__block {
+    min-height: 33%;
   }
 
 
   &_tagline {
-    color: #666666;
+    color: $color_grey;
     padding-left: 51px;
     margin-top: 21px;
   }
-  //&_tagline__color{
-  //  color: #666666;
-  //}
+
+
 
   &_title {
     margin-top: 5px;
@@ -82,13 +88,13 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    color: #666666;
+    color: $color_grey;
   }
 
   &_bonus__container {
     display: flex;
-    flex-direction:row;
-    color: #666666;
+    flex-direction: row;
+    color: $color_grey;
     z-index: 2;
   }
 
@@ -113,7 +119,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    color: #666666;
+    color: $color_grey;
     padding-left: 48px;
     margin-bottom: -10px;
   }
@@ -124,13 +130,14 @@
     margin-left: -30px;
 
   }
-  &_visualBlock{
+
+  &_visualBlock {
     display: flex;
     flex-direction: row;
-    //border: 1px solid red;
     position: relative;
   }
-  &_volume__box{
+
+  &_volume__box {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -141,84 +148,96 @@
     bottom: 115px;
     margin-left: 230px;
     position: absolute;
-    width:80px ;
+    width: 80px;
     height: 80px;
-    background: #1698D9;
-    color: #FFFFFF;
+    background: $color_default;
+    color: $color_white;
 
   }
 
-  &_volume{
-    padding-top:10px ;
+  &_volume {
+    padding-top: 10px;
     font-weight: 400;
     font-size: 42px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: $color_white;
 
 
   }
-  &_volume__box span{
+
+  &_volume__box span {
     font-size: 24px;
     margin-top: 7px;
   }
 }
 
-.packing_description{
+.packing_description {
 
-  margin-top:14px ;
+  margin-top: 14px;
   margin-left: 80px;
   text-align: center;
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
-  color: #FFFFFF;
+  color: $color_white;
 
-  & a{
+  & a {
 
-     padding-left:5px;
-     color: #1698D9;
-     cursor: pointer;
-   }
+    padding-left: 5px;
+    color: $color_default;
+    cursor: pointer;
+  }
 }
-.activeSelected{
-  border: 5px solid #D91667;
+
+.activeSelected {
+  border: 5px solid $color_selected;
 
 }
-.volume_box__active{
-  background: #D91667;
+
+.volume_box__active {
+  background: $color_selected;
 }
-.defaultHover:hover{
-  border:5px solid #2EA8E6;
+
+.defaultHover:hover {
+  border: 5px solid $color_default__hover;
 }
 
 .defaultHover:hover .packing_volume__box {
-  background:#2EA8E6
+  background: $color_default__hover
 }
-.selectedHover{
-  border: 5px solid #E52E7A;
+
+.selectedHover {
+  border: 5px solid $color_selected__hover;
 }
-.volume_boxHover__active{
-  background:#E52E7A ;
+
+.volume_boxHover__active {
+  background: $color_selected__hover;
 }
-.packing_tagline__hover{
-  color: #E52E7A;
+
+.packing_tagline__hover {
+  color: $color_selected__hover;
 }
-.volume_box__disabled{
-background: #B3B3B3;
+
+.volume_box__disabled {
+  background: $color_disabled;
 
 }
-.disabled_border__color{
-  border:5px solid #B3B3B3;
-  color:#B3B3B3;
+
+.disabled_border__color {
+  border: 5px solid $color_disabled;
+  color: $color_disabled;
 }
-.disabled_description__color{
+
+.disabled_description__color {
   color: #FFFF66;
 }
-.cat__disabled{
+
+.cat__disabled {
   opacity: 50%;
 
 }
-.disabled_text__color{
-  color:#B3B3B3;
+
+.disabled_text__color {
+  color: $color_disabled;
 }
 

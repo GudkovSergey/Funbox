@@ -92,7 +92,7 @@ const Packing = (props) => {
                     </div>
                 </div>
             </div>
-
+            {/*Если количество продукта (quantyty) в cart.json равно нулю, то при клике товар становится недоступным*/}
             {
                 selected === false ?
                     <div
